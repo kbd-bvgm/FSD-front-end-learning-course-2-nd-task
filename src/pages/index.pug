@@ -1,7 +1,54 @@
 link(rel='stylesheet', href='index.scss')
 
+-
+    let colors = [
+        {
+            name: "Dark Shade 100%",
+            code: "#1F2041",
+            class: "dark1",
+            opacity: "100%"
+        },
+        {
+            name: "Dark Shade 75%",
+            code: "#1F2041",
+            class: "dark2",
+            opacity: "75%"
+        },
+        {
+            name: "Dark Shade 50%",
+            code: "#1F2041",
+            class: "dark3",
+            opacity: "50%"
+        },
+        {
+            name: "Dark Shade 25%",
+            code: "#1F2041",
+            class: "dark4",
+            opacity: "25%"
+        },
+        {
+            name: "Dark Shade 5%",
+            code: "#1F2041",
+            class: "dark5",
+            opacity: "5%"
+        },
+        {
+            name: "Purple",
+            code: "#BC9CFF",
+            class: "primary",
+            opacity: "100%"
+        },
+        {
+            name: "Green",
+            code: "#6FCF97",
+            class: "secondary",
+            opacity: "100%"
+        },
+    ]
+
 .test
     .palette
-        .palette-row
-            .color-box
-            .color-text <strong>Dark Shade 100%</strong> #1F2041
+         each color in colors
+                .palette-row
+                    .color-box(class=color.class)
+                    .color-text <strong>#{color.name}</strong><br>#{color.code}

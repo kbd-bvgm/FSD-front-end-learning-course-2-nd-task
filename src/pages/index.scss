@@ -24,8 +24,10 @@
 }
 
 
+$base-color: #1F2041;
+
 html {
-  color: #1F2041;
+  color: $base-color;
   margin: 0;
   padding: 0;
   background-color: #E5E5E5;
@@ -43,13 +45,15 @@ html {
 .palette-row {
   display: flex;
   align-items: center;
+  margin-bottom: 20px;
 }
 
 .color-box {
   width: 70px;
   height: 70px;
   border-radius: 6px;
-  background-color: #1F2041;
+  //background-color: #1F2041;
+  //opacity: 100%;
   margin-right: 40px;
 }
 
@@ -58,4 +62,34 @@ html {
   font-size: 19px;
   line-height: 150%;
   width: 159px;
+}
+
+
+.dark1 {
+  background-color: $base-color;
+  opacity: 100%;
+}
+.dark2 {
+  background-color: $base-color;
+  opacity: 75%;
+}
+.dark3 {
+  background-color: $base-color;
+  opacity: 50%;
+}
+.dark4 {
+  background-color: $base-color;
+  opacity: 25%;
+}
+.dark5 {
+  background-color: $base-color;
+  opacity: 5%;
+}
+.primary {
+  background-color: #BC9CFF;
+  opacity: 100%;
+}
+.secondary {
+  background-color: #6FCF97;
+  opacity: 100%;
 }

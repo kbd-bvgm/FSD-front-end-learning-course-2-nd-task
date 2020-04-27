@@ -46,9 +46,23 @@ link(rel='stylesheet', href='index.scss')
         },
     ]
 
+img.logo(src="../logo.png")
 .test
     .palette
          each color in colors
                 .palette-row
                     .color-box(class=color.class)
                     .color-text <strong>#{color.name}</strong><br>#{color.code}
+    //.text
+    //    .line1.line
+    //        span H1
+    //        h1 This one is the sub-section or widget title
+    //    .line2.line
+    //        span H2
+    //        h2 Next one is the item title inside widgets
+    //    .line3.line
+    //        span H3
+    //        h3 This is a label or cta text
+    //    .line4.line
+    //        span Body
+    //        .p This is the body text which is used for most of design, like paragraphs, lists, etc.

@@ -151,18 +151,29 @@ p {
   opacity: 100%;
 }
 
-.line {
+.text {
   display: flex;
   align-items: flex-start;
   margin-top: 0;
   width: 403px;
-  margin-bottom: 50px;
 }
 
 .tag {
   margin-right: 30px;
+  margin-bottom: 50px;
   text-align: right;
   font-family: Montserrat, sans-serif;
   opacity: 75%;
   font-weight: normal;
+}
+
+.tags {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.description {
+  margin-bottom: 50px;
+  width: 336px;
 }

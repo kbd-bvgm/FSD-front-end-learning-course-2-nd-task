@@ -1,0 +1,124 @@
+/* montserrat-regular - latin_cyrillic */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Montserrat Regular'), local('Montserrat-Regular'),
+  url('../fonts/montserrat/montserrat-v14-latin_cyrillic-regular.woff2') format('woff2'), /* Super Modern Browsers */
+  url('../fonts/montserrat/montserrat-v14-latin_cyrillic-regular.woff') format('woff'), /* Modern Browsers */
+  url('../fonts/montserrat/montserrat-v14-latin_cyrillic-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+  url('../fonts/montserrat/montserrat-v14-latin_cyrillic-regular.svg#Montserrat') format('svg'); /* Legacy iOS */
+}
+/* montserrat-700 - latin_cyrillic */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Montserrat Bold'), local('Montserrat-Bold'),
+  url('../fonts/montserrat/montserrat-v14-latin_cyrillic-700.woff2') format('woff2'), /* Super Modern Browsers */
+  url('../fonts/montserrat/montserrat-v14-latin_cyrillic-700.woff') format('woff'), /* Modern Browsers */
+  url('../fonts/montserrat/montserrat-v14-latin_cyrillic-700.ttf') format('truetype'), /* Safari, Android, iOS */
+  url('../fonts/montserrat/montserrat-v14-latin_cyrillic-700.svg#Montserrat') format('svg'); /* Legacy iOS */
+}
+
+.test {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+label {
+  font-family: Montserrat, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  /* identical to box height */
+
+  text-transform: uppercase;
+
+  /* Dark 100% */
+
+  color: #1F2041;
+}
+
+input {
+  margin-top: 5px;
+  display: block;
+  width: 320px;
+  height: 44px;
+  font-family: Montserrat, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  /* identical to box height, or 129% */
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  border-radius: 4px;
+  padding-left: 15px;
+
+  /* Dark 25% */
+
+  color: rgba(31, 32, 65, 0.25);
+}
+
+input::placeholder {
+  color: rgba(31, 32, 65, 0.25);
+}
+
+input:hover, input:focus {
+  border-color: rgba(31, 32, 65, 0.5);
+  color: rgba(31, 32, 65, 0.75);
+  outline: none;
+}
+
+input:hover::placeholder, input:focus::placeholder {
+  color: rgba(31, 32, 65, 0.75);
+}
+
+//label::after {
+//  content: "";
+//  position: relative;
+//  bottom: 30px;
+//  left: 290px;
+//  width: 10px;
+//  height: 10px;
+//  border-width: 0 2px 2px 0;
+//  border-style: solid;
+//  transform: rotate(45deg);
+//  border-color: rgba(31, 32, 65, 0.5);
+//  display: block;
+//}
+
+//label:hover::after, label:focus::after, label:hover::before, label:focus::before {
+//  border-color: rgba(31, 32, 65, 0.75);
+//}
+
+label::after {
+  content: "";
+  position: relative;
+  bottom: 30px;
+  left: 290px;
+  width: 10px;
+  height: 10px;
+  border-width: 0 2px 2px 0;
+  border-style: solid;
+  transform: rotate(-45deg);
+  border-color: #BC9CFF;
+  display: block;
+}
+
+label::before {
+  content: "";
+  position: relative;
+  top: 41px;
+  left: 280px;
+  width: 20px;
+  //height: 10px;
+  border-width: 1px;
+  border-style: solid;
+  //transform: rotate(45deg);
+  border-color: #BC9CFF;
+  display: block;
+}

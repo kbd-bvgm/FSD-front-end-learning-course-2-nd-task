@@ -86,28 +86,34 @@ input:hover::placeholder, input:focus::placeholder {
   color: rgba(31, 32, 65, 0.75);
 }
 //галка дропдауна
-//label::after {
-//  font-family: 'Material Icons';
+//button {
+//  font-family: 'Material Icons',sans-serif;
 //  font-size: 24px;
 //  text-transform: none;
-//  content: "expand_more";
 //  position: relative;
+//  border: 0;
+//  background: transparent;
 //  bottom: 30px;
 //  left: 290px;
 //  color: rgba(31, 32, 65, 0.5);
 //}
 
-label:hover::after, label:focus::after, label:hover::before, label:focus::before {
-  color: rgba(31, 32, 65, 0.75);
+button:hover, button:focus, input:hover + button, input:focus + button {
+  //color: rgba(31, 32, 65, 0.75);
+  outline: none;
 }
+
 //стрелка для почты
-//label::after {
-//  font-family: 'Material Icons';
-//  font-size: 24px;
-//  text-transform: none;
-//  content: "arrow_forward";
-//  position: relative;
-//  color: #BC9CFF;
-//  bottom: 30px;
-//  left: 290px;
-//}
+button {
+  font-family: 'Material Icons',sans-serif;
+  font-size: 24px;
+  text-transform: none;
+  position: relative;
+  //color: #BC9CFF;
+  bottom: 30px;
+  left: 290px;
+  border: 0;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  -webkit-background-clip: text; /* Обрезаем фон по тексту */
+  -webkit-text-fill-color: transparent; /* Прозрачный текст */
+}

@@ -20,6 +20,15 @@
   url('../fonts/montserrat/montserrat-v14-latin_cyrillic-700.ttf') format('truetype'), /* Safari, Android, iOS */
   url('../fonts/montserrat/montserrat-v14-latin_cyrillic-700.svg#Montserrat') format('svg'); /* Legacy iOS */
 }
+@font-face {
+  font-family: 'Material Icons';
+  src: url('../fonts/material icons/MaterialIcons-Regular.woff') format('woff'),
+  url('../fonts/material icons/MaterialIcons-Regular.woff2') format('woff2'),
+  url('../fonts/material icons/MaterialIcons-Regular.ttf') format('truetype'),
+  url('../fonts/material icons/MaterialIcons-Regular.svg#MaterialIcons-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
 
 .test {
   display: flex;
@@ -76,49 +85,29 @@ input:hover, input:focus {
 input:hover::placeholder, input:focus::placeholder {
   color: rgba(31, 32, 65, 0.75);
 }
-
+//галка дропдауна
 //label::after {
-//  content: "";
+//  font-family: 'Material Icons';
+//  font-size: 24px;
+//  text-transform: none;
+//  content: "expand_more";
 //  position: relative;
 //  bottom: 30px;
 //  left: 290px;
-//  width: 10px;
-//  height: 10px;
-//  border-width: 0 2px 2px 0;
-//  border-style: solid;
-//  transform: rotate(45deg);
-//  border-color: rgba(31, 32, 65, 0.5);
-//  display: block;
+//  color: rgba(31, 32, 65, 0.5);
 //}
 
-//label:hover::after, label:focus::after, label:hover::before, label:focus::before {
-//  border-color: rgba(31, 32, 65, 0.75);
+label:hover::after, label:focus::after, label:hover::before, label:focus::before {
+  color: rgba(31, 32, 65, 0.75);
+}
+//стрелка для почты
+//label::after {
+//  font-family: 'Material Icons';
+//  font-size: 24px;
+//  text-transform: none;
+//  content: "arrow_forward";
+//  position: relative;
+//  color: #BC9CFF;
+//  bottom: 30px;
+//  left: 290px;
 //}
-
-label::after {
-  content: "";
-  position: relative;
-  bottom: 30px;
-  left: 290px;
-  width: 10px;
-  height: 10px;
-  border-width: 0 2px 2px 0;
-  border-style: solid;
-  transform: rotate(-45deg);
-  border-color: #BC9CFF;
-  display: block;
-}
-
-label::before {
-  content: "";
-  position: relative;
-  top: 41px;
-  left: 280px;
-  width: 20px;
-  //height: 10px;
-  border-width: 1px;
-  border-style: solid;
-  //transform: rotate(45deg);
-  border-color: #BC9CFF;
-  display: block;
-}
